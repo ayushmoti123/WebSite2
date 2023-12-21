@@ -1,0 +1,37 @@
+﻿body {
+    padding:0;
+    margin:0;
+    height: 1673px;
+}
+.container {
+    background:rgb(189, 174, 174);
+    width:100%;
+    height:100%;
+}
+.navbar {
+    width:100%;
+    height:80px;
+    background:rgba(59, 52, 52, 0.22);
+}
+.navbar ul {
+        float:right;
+        margin-right:30px;
+    }
+.navbar ul li {
+    list-style:none;
+    display:inline-block;
+    padding-left:20px;
+    font-size:larger;
+    font-family:Bahnschrift;
+}
+.navbar ul li a {
+        text-decoration:none;
+        color:black;
+        transition:0.1s;
+ }
+        
+    .navbar ul li a:hover {
+        background:rgba(81, 246, 174, 0.67);
+        border-radius:2px;
+
+    }
