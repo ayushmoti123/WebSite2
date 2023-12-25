@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
+﻿
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
 
 <!DOCTYPE html>
 
@@ -8,20 +10,24 @@
     <link rel="stylesheet" href="style1.css" />
 </head>
 <body>
-        <form id="form1" runat="server">
         <div class="container">
+        <form id="form1" runat="server">
+        
         <nav class="navbar">
-            <asp:Panel ID="Panel1" runat="server" BorderStyle="Dotted" BorderWidth="10px" Font-Bold="True" Font-Size="XX-Large" ForeColor="#CCFFCC" style="z-index: 1; left: 418px; top: 305px; position: absolute; height: 173px; width: 707px">
-                A safe space to deposit money and shop
-            </asp:Panel>
+            
             <ul>
-                <li><a  href="Signup.aspx">AdminLogin</a></li>
-                <li><a  href="Signup.aspx">UserLogin</a></li>
+                <li><a  href="Login.aspx">Login</a></li>
                 <li><a  href="Signup.aspx">Signup</a></li>
             </ul>
         </nav>
-    </div>
-    </form>
+            <asp:Panel ID="Panel1" runat="server" BorderStyle="Dotted" BorderWidth="10px" Font-Bold="True" Font-Size="XX-Large" ForeColor="#CCFFCC" style="z-index: 1; left: 418px; top: 305px; position: absolute; height: 69px; width: 669px">
+                &nbsp;A safe space to deposit money and shop
+            </asp:Panel>
+            <asp:Image ID="Image2" runat="server" BorderColor="Black" BorderStyle="Solid" ImageUrl="~/happy2.jpg" style="z-index: 1; left: 641px; top: 489px; position: absolute; height: 204px; width: 348px" />
+            <asp:Image ID="Image3" runat="server" BorderColor="Black" BorderStyle="Solid" ImageUrl="~/happy3.jpeg" style="z-index: 1; left: 1083px; top: 490px; position: absolute; height: 204px; width: 350px" />
         </form>
+        
+   </div>    
+        <asp:Image ID="Image1" runat="server" BorderColor="Black" BorderStyle="Solid" CssClass="image1" ImageUrl="~/happy1.jpg" style="z-index: 1; left: 156px; top: 490px; position: absolute; width: 346px" />
 </body>
 </html>

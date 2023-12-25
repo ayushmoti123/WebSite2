@@ -4,8 +4,7 @@
     height: 1673px;
 }
 .container {
-    background:rgb(189, 174, 174);
-    width:100%;
+    background:rgba(176, 135, 135, 0.67);
     height:100%;
 }
 .navbar {
@@ -30,8 +29,11 @@
         transition:0.1s;
  }
         
-    .navbar ul li a:hover {
+.navbar ul li a:hover {
         background:rgba(81, 246, 174, 0.67);
         border-radius:2px;
 
     }
+.image1 {
+    pointer-events:visibleFill;
+}
