@@ -21,10 +21,19 @@ public partial class Signup : System.Web.UI.Page
         string count = "Select count(*) from Customer_master";
         com = new SqlCommand(count, con);
         int id = (int)com.ExecuteScalar() + 1;
+        Session["id"] = id;
         string s = "Insert into Customer_master values(" + id + ",'" + TextBox1.Text + "'," + TextBox2.Text + ")";
         com = new SqlCommand(s, con);
         com.ExecuteNonQuery();
         con.Close();
-        Response.Write("<script language= javascript> alert('Value inserted successfully')</script>");
+        Label4.Visible = true;
+        Label4.Text = "Your id is " + Session["id"];
+        Session.Abandon();
+        Button2.Visible = true;
+}
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Homepage.aspx");
+        Response.Write("<script language= javascript> alert('Signed Up successfully')</script>");
     }
 }

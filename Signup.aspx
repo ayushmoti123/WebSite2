@@ -20,6 +20,8 @@
         <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" style="z-index: 1; left: 655px; top: 156px; position: absolute" Text="Signup"></asp:Label>
     
     </div>
+        <asp:Label ID="Label4" runat="server" style="z-index: 1; left: 712px; top: 691px; position: absolute; bottom: 88px" Text="Label" Visible="False"></asp:Label>
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="z-index: 1; left: 636px; top: 748px; position: absolute" Text="Go back to home page" Visible="False" />
     </form>
 </body>
 </html>

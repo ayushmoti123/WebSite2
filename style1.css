@@ -9,9 +9,8 @@
 }
 .navbar {
     width:100%;
-    height:80px;
-    background:rgba(59, 52, 52, 0.22);
-}
+    height:25px;
+    }
 .navbar ul {
         float:right;
         margin-right:30px;
@@ -34,6 +33,11 @@
         border-radius:2px;
 
     }
-.image1 {
-    pointer-events:visibleFill;
+.image1 Image{
+    transition:0.1s;
+   
+}
+.image1 Image:hover {
+    height:210px;
+    width:350px;
 }
